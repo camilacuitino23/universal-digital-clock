@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj Digital Universal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/clock-icon.png" image="/x-icon">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+
+    <div class="reloj" id="reloj">
+        00:00:00
+    </div>    
+    
+    <br>
+    <br>
+
+    <select title="zona-horaria" id="zona-horaria">
+        <option value="-12">Estados Unidos (Baker Island) (UTC -12:00)</option>
+        <option value="-11">Estados Unidos (Samoa Americana) (UTC -11:00)</option>
+        <option value="-10">Estados Unidos (Hawái) (UTC -10:00)</option>
+        <option value="-10">Francia (Polinesia Francesa) (UTC -10:00)</option>
+        <option value="-9">Estados Unidos (Alaska) (UTC -9:00)</option>
+        <option value="-8">Estados Unidos (PST, Los Ángeles) (UTC -8:00)</option>
+        <option value="-8">Canadá (Vancouver) (UTC -8:00)</option>
+        <option value="-7">Estados Unidos (MST, Denver) (UTC -7:00)</option>
+        <option value="-7">Canadá (Edmonton) (UTC -7:00)</option>
+        <option value="-6">México (Ciudad de México) (UTC -6:00)</option>
+        <option value="-6">Estados Unidos (CST, Chicago) (UTC -6:00)</option>
+        <option value="-6">Canadá (Winnipeg) (UTC -6:00)</option>
+        <option value="-5">Estados Unidos (EST, Nueva York) (UTC -5:00)</option>
+        <option value="-5">Perú (Lima) (UTC -5:00)</option>
+        <option value="-5">Colombia (Bogotá) (UTC -5:00)</option>
+        <option value="-5">Canadá (Toronto) (UTC -5:00)</option>
+        <option value="-4.5">Venezuela (UTC -4:30)</option>
+        <option value="-4">Chile (Santiago) (UTC -4:00)</option>
+        <option value="-4">República Dominicana (UTC -4:00)</option>
+        <option value="-4">Puerto Rico (UTC -4:00)</option>
+        <option value="-4">Canadá (Halifax) (UTC -4:00)</option>
+        <option value="-3.5">Canadá (Newfoundland) (UTC -3:30)</option>
+        <option value="-3">Argentina (Buenos Aires) (UTC -3:00)</option>
+        <option value="-3" selected>Uruguay (Montevideo) (UTC -3:00)</option>
+        <option value="-3">Brasil (Brasilia) (UTC -3:00)</option>
+        <option value="-2">Brasil (Fernando de Noronha) (UTC -2:00)</option>
+        <option value="-1">Portugal (Azores) (UTC -1:00)</option>
+        <option value="0">Reino Unido (Londres) (UTC ±0:00)</option>
+        <option value="0">Portugal (Lisboa) (UTC ±0:00)</option>
+        <option value="0">Marruecos (Casablanca) (UTC ±0:00)</option>
+        <option value="0">Islandia (Reikiavik) (UTC ±0:00)</option>
+        <option value="1">España (Madrid) (UTC +1:00)</option>
+        <option value="1">Francia (París) (UTC +1:00)</option>
+        <option value="1">Alemania (Berlín) (UTC +1:00)</option>
+        <option value="1">Italia (Roma) (UTC +1:00)</option>
+        <option value="2">Grecia (Atenas) (UTC +2:00)</option>
+        <option value="2">Egipto (El Cairo) (UTC +2:00)</option>
+        <option value="2">Israel (Jerusalén) (UTC +2:00)</option>
+        <option value="3">Rusia (Moscú) (UTC +3:00)</option>
+        <option value="3">Kenia (Nairobi) (UTC +3:00)</option>
+        <option value="3">Arabia Saudita (Riyadh) (UTC +3:00)</option>
+        <option value="3.5">Irán (Teherán) (UTC +3:30)</option>
+        <option value="4">Emiratos Árabes Unidos (Dubái) (UTC +4:00)</option>
+        <option value="4">Azerbaiyán (Bakú) (UTC +4:00)</option>
+        <option value="4">Rusia (Samara) (UTC +4:00)</option>
+        <option value="4.5">Afganistán (Kabul) (UTC +4:30)</option>
+        <option value="5">Pakistán (Islamabad) (UTC +5:00)</option>
+        <option value="5">India (Nueva Delhi) (UTC +5:30)</option>
+        <option value="5.75">Nepal (Katmandú) (UTC +5:45)</option>
+        <option value="6">Bangladés (Dhaka) (UTC +6:00)</option>
+        <option value="6">Kazajistán (Almaty) (UTC +6:00)</option>
+        <option value="6">Kirguistán (Bishkek) (UTC +6:00)</option>
+        <option value="6.5">Birmania (Rangún) (UTC +6:30)</option>
+        <option value="7">Tailandia (Bangkok) (UTC +7:00)</option>
+        <option value="7">Indonesia (Yakarta) (UTC +7:00)</option>
+        <option value="8">China (Pekín) (UTC +8:00)</option>
+        <option value="8">Singapur (UTC +8:00)</option>
+        <option value="8">Australia (Perth) (UTC +8:00)</option>
+        <option value="9">Japón (Tokio) (UTC +9:00)</option>
+        <option value="9">Corea del Sur (Seúl) (UTC +9:00)</option>
+        <option value="9.5">Australia (Adelaida) (UTC +9:30)</option>
+        <option value="9.5">Australia (Darwin) (UTC +9:30)</option>
+        <option value="10">Australia (Sídney) (UTC +10:00)</option>
+        <option value="10">Papúa Nueva Guinea (Port Moresby) (UTC +10:00)</option>
+        <option value="11">Islas Salomón (Honiara) (UTC +11:00)</option>
+        <option value="11">Rusia (Vladivostok) (UTC +11:00)</option>
+        <option value="12">Nueva Zelanda (Auckland) (UTC +12:00)</option>
+        <option value="12">Fiyi (UTC +12:00)</option>
+        <option value="12">Rusia (Kamchatka) (UTC +12:00)</option>
+        <option value="13">Tonga (UTC +13:00)</option>
+        <option value="13">Samoa (UTC +13:00)</option>
+        <option value="14">Kiribati (Isla Kiritimati) (UTC +14:00)</option>
+    </select>
+
+
+</body>
+</html>
