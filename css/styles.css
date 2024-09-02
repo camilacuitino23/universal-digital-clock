@@ -1,0 +1,45 @@
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1e1e1e;
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            color: #ffffff;
+        }
+
+        .reloj {
+            color: #e91e63;
+            font-size: 64px;
+            background-color: #212121;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 30px rgba(233, 30, 99, 0.5);
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .reloj:hover {
+            box-shadow: 0px 0px 50px rgba(233, 30, 99, 0.8);
+            color: #ff4081;
+        }
+
+        select {
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 5px;
+            background-color: #212121;
+            color:#ff4081;
+            border: none;
+            box-shadow: 0px 0px 10px rgba(233, 30, 99, 0.5);
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        select:hover {
+            box-shadow: 0px 0px 15px rgba(233, 30, 99, 0.8);
+        }
+
+
